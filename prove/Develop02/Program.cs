@@ -67,8 +67,10 @@ class Program
                 Console.Write("Enter a filename: ");
                 string file = Console.ReadLine();
                 answers1.save(file);
-            } else{
-                Console.WriteLine($"Goodbye");
+            } else if (choose == 5){
+                Console.WriteLine("Goodbye"); //also shows creativity
+            } else {
+                Console.WriteLine("Invalid number! Enter the correct number. Enter 1, 2, 3, 4, or 5."); //this is my creativity line.              
             }
             
         } while (choose != 5);
